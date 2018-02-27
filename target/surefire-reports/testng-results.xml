@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[PASS: Browser used is Google Chrome;
+]]>
+    </line>
+    <line>
+      <![CDATA[PASS: Succesfully Navigates and Opens the Browser;
+]]>
+    </line>
+    <line>
+      <![CDATA[FAIL: Unexpected error/exception occured in enterText(): Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name='userName'] (tried for 30 second(s) with 500 MILLISECONDS interval);
+]]>
+    </line>
+  </reporter-output>
+  <suite name="Cucumber BDD Suite" duration-ms="56010" started-at="2018-02-27T13:38:26Z" finished-at="2018-02-27T13:39:22Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.acn.scenarios.BatchRunner@1efbd816]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group>
+    </groups>
+    <test name="Functional Test 1" duration-ms="56010" started-at="2018-02-27T13:38:26Z" finished-at="2018-02-27T13:39:22Z">
+      <class name="com.acn.scenarios.BatchRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.acn.scenarios.BatchRunner@1efbd816]" name="setUpClass" is-config="true" duration-ms="347" started-at="2018-02-27T13:38:27Z" finished-at="2018-02-27T13:38:28Z">
+        </test-method>
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.acn.scenarios.BatchRunner@1efbd816]" name="feature" duration-ms="54644" started-at="2018-02-27T13:38:28Z" description="Runs Cucumber Feature" finished-at="2018-02-27T13:39:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Demo]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: FAIL: Unexpected error/exception occured in enterText(): Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name='userName'] (tried for 30 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: FAIL: Unexpected error/exception occured in enterText(): Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name='userName'] (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.AssertionError: FAIL: Unexpected error/exception occured in enterText(): Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name='userName'] (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.acn.testbase.TestBase.ReportResults(TestBase.java:261)
+	at com.acn.testbase.TestBase.enterText(TestBase.java:406)
+	at com.acn.scenarios.GlobalStepDef.enterValue(GlobalStepDef.java:58)
+	at ✽.Then enter "mercury;xpath>>//input[@name='userName'];txtUserName"(TestAU-DemoCreate.feature:4)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.acn.scenarios.BatchRunner@1efbd816]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2018-02-27T13:39:22Z" finished-at="2018-02-27T13:39:22Z">
+        </test-method>
+      </class>
+      <class name="com.acn.scenarios.SetupBrowser">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.acn.scenarios.SetupBrowser@66d2e7d9]" name="beforeTest" is-config="true" duration-ms="892" started-at="2018-02-27T13:38:26Z" finished-at="2018-02-27T13:38:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.acn.scenarios.SetupBrowser@66d2e7d9]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-02-27T13:39:22Z" finished-at="2018-02-27T13:39:22Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
